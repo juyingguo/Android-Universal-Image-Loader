@@ -19,8 +19,31 @@ package com.nostra13.universalimageloader.sample;
  * @author Sergey Tarasevich (nostra13[at]gmail[dot]com)
  */
 public final class Constants {
-
-	public static final String[] IMAGES = new String[] {
+	public static final String[] IMAGES_CUSTOM = new String[] {
+			// Heavy images
+			"https://img-pre.ivsky.com/img/tupian/pre/202012/25/jiebing_zhiwu-001.jpg",
+//			"https://img-pre.ivsky.com/img/tupian/pre/202012/25/jiebing_zhiwu-002.jpg",
+//			"https://img-pre.ivsky.com/img/tupian/pre/202012/25/jiebing_zhiwu-003.jpg",
+//			"https://img-pre.ivsky.com/img/tupian/pre/202012/25/jiebing_zhiwu-004.jpg",
+//			// Light images
+//			"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg10.360buyimg.com%2Fn1%2Fjfs%2Ft1%2F24680%2F11%2F6235%2F228967%2F5c4aa4a8Ef6767301%2Fea8dac2961eb24c0.jpg&refer=http%3A%2F%2Fimg10.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638797781&t=1ed22386802bae768fff791313f34a15",
+//			"https://www.baidu.com/link?url=SQ9PiQw9Vsy7KV9zoFMpY5ZmKN0-yLAEWPJvpSSHAK2pcAkkZB4bib9_A7J5u5IAtcttVPDniy6HZ9go87_bkwe064AljEA5_t6HU5jI0fS0bwedlbbGw6vxrUMZXgjRa3m3k66p87JM7YpAAEgFyNzWntOrPTUZDhmD-w6l0k8KJS87PM1JYHtsepE-XGy3anNZbviGlCZtK4FMO21G1EWJzo4kPbITX8ns5h1vWeTHwjOq7lEXKWpa7aGqqvkHQrUY01PDokTmINeyRZZivJ5tbK2aO85ZZqfIqsI979OhRwH9LEGChwNfm3MGUlCXuaILHU7-FfpBtNHxuq0j2COQ2vWRjI4buN3sJIo1vYFOlfCqaKBVhgCCfSOoROo1mih_2YHyOffYeTtf-Et70kcjG9RGznWDg5DBoWCwpbwR_9JhOuKQOKF2F9Fcko4UEzZmKUWigpRQhmFJsgbrSovXIluo5voygZoW341t686AdxAkuGo2yCrQ9oKYsPwc8HNwVNgsq9qQ0yhFromlyqZ1-2YMTgqJ12sfKocFm1E9JPAx1iuzdbpM97l0_hFoudSW17QcW1S9gm6UJWOXhHHSO43d007Jd8uNpJmFqQNCorzfXNAwpk5uYqg_JnSyvMfU12hnzg1N7noT5iJyV0UbfNGE2TRcl5yhJdUsRf2F0g7W8Xg7hUbJwZ-az0gg&wd=&eqid=e431a1190010b4e70000000661867ae5",
+//			"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11309532178%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638795804&t=3f2aa8f1c9999da4c65085cf22977ed3",
+//			// Special cases
+//			"http://cdn.urbanislandz.com/wp-content/uploads/2011/10/MMSposter-large.jpg", // Very large image
+//			"https://alifei04.cfp.cn/creative/vcg/veer/612/veer-168419413.jpg?x-oss-process=image/format,webp", // WebP image
+//			"http://4.bp.blogspot.com/-LEvwF87bbyU/Uicaskm-g6I/AAAAAAAAZ2c/V-WZZAvFg5I/s800/Pesto+Guacamole+500w+0268.jpg", // Image with "Mark has been invalidated" problem
+//			"file:///sdcard/Universal Image Loader @#&=+-_.,!()~'%20.png", // Image from SD card with encoded symbols
+//			"assets://Living Things @#&=+-_.,!()~'%20.jpg", // Image from assets
+//			"drawable://" + R.drawable.ic_launcher, // Image from drawables
+//			"http://upload.wikimedia.org/wikipedia/ru/b/b6/Как_кот_с_мышами_воевал.png", // Link with UTF-8
+//			"https://www.eff.org/sites/default/files/chrome150_0.jpg", // Image from HTTPS
+//			"http://bit.ly/soBiXr", // Redirect link
+//			"http://img001.us.expono.com/100001/100001-1bc30-2d736f_m.jpg", // EXIF
+//			"", // Empty link
+//			"http://wrong.site.com/corruptedLink", // Wrong link
+	};
+	public static final String[] IMAGES = IMAGES_CUSTOM;/*new String[] {
 			// Heavy images
 			"https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s1024/A%252520Photographer.jpg",
 			"https://lh4.googleusercontent.com/--dq8niRp7W4/URquVgmXvgI/AAAAAAAAAbs/-gnuLQfNnBA/s1024/A%252520Song%252520of%252520Ice%252520and%252520Fire.jpg",
@@ -159,7 +182,7 @@ public final class Constants {
 			"http://img001.us.expono.com/100001/100001-1bc30-2d736f_m.jpg", // EXIF
 			"", // Empty link
 			"http://wrong.site.com/corruptedLink", // Wrong link
-	};
+	};*/
 
 	private Constants() {
 	}
@@ -167,7 +190,7 @@ public final class Constants {
 	public static class Config {
 		public static final boolean DEVELOPER_MODE = false;
 	}
-	
+
 	public static class Extra {
 		public static final String FRAGMENT_INDEX = "com.nostra13.example.universalimageloader.FRAGMENT_INDEX";
 		public static final String IMAGE_POSITION = "com.nostra13.example.universalimageloader.IMAGE_POSITION";
